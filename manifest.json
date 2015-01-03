@@ -1,0 +1,40 @@
+{
+  "manifest_version": 2,
+
+  "name": "Watch 'n track",
+  "description": "Auto check-in for your movies and shows",
+  "version": "1.0",
+  "options_page": "settings.html",
+
+  "icons": { "16": "images/ac-icon-16.png",
+             "48": "images/ac-icon-48.png",
+            "128": "images/ac-icon-128.png" },
+
+  "permissions": [
+    "http://*.netflix.com/",
+    "http://*.trakt.tv/",
+    "activeTab",
+    "tabs",
+    "storage",
+    "notifications"
+  ],
+
+  "browser_action": {
+    "default_icon": "images/ic-icon.png",
+    "default_popup": "login.html"
+  },
+
+  "background": {
+    "scripts": ["js/background.js", "js/jquery-2.1.1.min.js"],
+    "persistent": false 
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["http://*.netflix.com/*"],
+      "js": ["js/contentscript.js"]
+    }
+  ],
+
+  "web_accessible_resources": ["js/get-data.js"]
+}

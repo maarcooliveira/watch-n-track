@@ -1,0 +1,100 @@
+body {
+  min-width: 180px;
+  overflow-x: hidden;
+  margin: 10px;
+}
+
+button {
+  background: #4591D1;
+  height: 30px;
+  
+  border: none;
+  font-size: 1.2em;
+  color: #fff;
+  position:relative;
+  cursor:pointer;
+  display: block;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.full-width{
+  margin: 0 auto;
+  width: 100%;
+}
+
+input[type=text],
+input[type=password],
+input[type=number] {
+  height: 25px;
+}
+
+i {
+  margin: 0px 10px 0px 10px;
+}
+
+.outer-center {
+    float: right;
+    right: 50%;
+    position: relative;
+}
+
+.inner-center {
+    float: right;
+    right: -50%;
+    position: relative;
+}
+
+.clear {
+    clear: both;
+}
+
+#save {
+  width: 200px;
+}
+
+#checkin-time{
+  width: 40px;
+}
+
+.center{
+  text-align: center;
+}
+
+.container{
+  margin: 40px;
+}
+
+#main-container{
+  padding: 50px;
+  background: #fff;
+}
+
+#history-container{
+  padding: 50px;
+  background: ;
+  min-width: 500px;
+}
+
+#history-item{
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#full-body{
+  background: #4591D1;
+}
+
+.light-text{
+  color: #fff;
+}
+
+#logout{
+  background: #d62728;
+}
+
+img{
+  margin-right: 20px;
+}

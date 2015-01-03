@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Watch 'n Track</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/login.js"></script>    
+  </head>
+
+  <body>
+    <div id="login_div">
+      <h2 class="center">Login to Trakt</h2>
+      <br>
+      <p><i class="fa fa-at"></i><input placeholder="user" type="text" id="user"></p>
+      <p><i class="fa fa-lock"></i><input placeholder="password" type="password" id="password"></p>
+      <div class="outer-center">
+        <p id="response" class="inner-center"></p>
+      </div>
+      <div class="clear"></div>
+      <p><button  class="full-width" id="login">Login</button></p>
+    </div>
+    <div id="logout_div">
+      <h2 class="center">Watch 'n Track</h2>
+      <p class="center">Logged in as <span id="username"></span></p>
+      <br>
+      <p><button  class="full-width" id="history">History</button></p>
+      <p><button  class="full-width" id="settings">Settings</button></p>
+      <p><button  class="full-width" id="logout">Logout</button></p>
+      <p id="response"></p>
+    </div>
+  </body>
+  
+</html>
+
